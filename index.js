@@ -8,7 +8,7 @@ const app = express();
 
 app.use(express.json({ extended: true }));
 
-const PORT = process.env.PORT ||  4000;
+const port = process.env.PORT ||  4000;
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -35,7 +35,7 @@ app.get('/', (req, resp) => {
     });
 });
 
-app.listen(PORT, () => {
-    console.log(`El servidor está funcionado en el puerto ${PORT}`);
+app.listen(port, '0.0.0.0', () => {
+  // console.log(`El servicdor esta functionando por el puerto ${PORT}`);
 });
 
