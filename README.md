@@ -2,6 +2,9 @@
 
 Backend task application MEAN STACK and JWT
 
+## DEMO
+[DEMOAPP](https://flamboyant-pasteur-e2281a.netlify.app/#/)
+
 ## Installation
 
 run the following commands:
@@ -18,6 +21,9 @@ the server will start running on port 4000
 ## ENDPOINTS
 
 ```python
+
+   base url in development: http://localhost:4000/api
+   base url in production: https://task-app-mean.herokuapp.com/api
 
  - create a user
 
