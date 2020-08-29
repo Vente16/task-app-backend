@@ -29,7 +29,10 @@ app.use('/api/auth/', require('./routes/auth'));
 app.use('/api/tasks/', require('./routes/task'));
 
 app.get('/', (req, resp) => {
-    resp.send('Holaa Amor!');
+    resp.status(200).json({
+       name: "API task MEAN STACK",
+       varsion: "1.0"
+    });
 });
 
 app.listen(PORT, () => {
